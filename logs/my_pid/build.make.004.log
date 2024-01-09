@@ -1,0 +1,4 @@
+[100%] [34m[1mGenerating dynamic reconfigure files from cfg/pid.cfg: /home/cjy/drone/mavros/catkin_ws/devel/.private/my_pid/include/my_pid/pidConfig.h /home/cjy/drone/mavros/catkin_ws/devel/.private/my_pid/lib/python3/dist-packages/my_pid/cfg/pidConfig.py[0m
+Generating reconfiguration files for my_pid in my_pid
+Wrote header file in /home/cjy/drone/mavros/catkin_ws/devel/.private/my_pid/include/my_pid/my_pidConfig.h
+[100%] Built target my_pid_gencfg

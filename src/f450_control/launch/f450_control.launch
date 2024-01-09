@@ -1,0 +1,46 @@
+<launch>
+    <node name="controller" pkg="pid" type="controller" ns="axis_velocity_Z" output="screen" >
+      <param name="node_name" value="velocity_Z_pid" />
+      <param name="Kp" value="4" />
+      <param name="Ki" value="0.0" />
+      <param name="Kd" value="0.0" />
+      <param name="upper_limit" value="2" />
+      <param name="lower_limit" value="-2" />
+      <param name="windup_limit" value="0.5" />
+      <param name="max_loop_frequency" value="100.0" />
+      <param name="min_loop_frequency" value="100.0" />
+      <remap from="setpoint" to="/setpoint" />
+     </node>
+
+    <node name="f450_control_node" pkg="f450_control" type="control_node" ns="axis_velocity_Z" output="screen" >
+      <param name="plant_order" value="1" />
+    </node>
+
+    <node name="controller" pkg="pid" type="controller" ns="axis_velocity_Y" output="screen" >
+      <param name="node_name" value="velocity_Z_pid" />
+      <param name="Kp" value="1" />
+      <param name="Ki" value="0.1" />
+      <param name="Kd" value="0.0" />
+      <param name="upper_limit" value="1" />
+      <param name="lower_limit" value="-1" />
+      <param name="windup_limit" value="0.5" />
+      <param name="max_loop_frequency" value="100.0" />
+      <param name="min_loop_frequency" value="100.0" />
+      <remap from="setpoint" to="/setpoint" />
+     </node>
+
+    <node name="f450_control_node" pkg="f450_control" type="control_node" ns="axis_velocity_Y" output="screen" >
+      <param name="plant_order" value="2" />
+    </node>
+
+    <node name="f450_exec_control_node" pkg="f450_control" type="exec_control_node" output="screen" ></node>
+
+    <node name="setpoint_node" pkg="pid" type="setpoint_node" output="screen" />
+
+    <node name="rqt_plot" pkg="rqt_plot" type="rqt_plot"
+    args="/axis_velocity_Z/control_effort/data /axis_velocity_Z/state/data" />
+
+    <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" />
+</launch>
+   
+   

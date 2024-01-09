@@ -1,0 +1,1 @@
+/home/cjy/drone/mavros/catkin_ws/devel/.private/offboard_py/share/offboard_py/cmake/offboard_pyConfig.cmake

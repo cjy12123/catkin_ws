@@ -1,0 +1,8 @@
+prefix=/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision
+
+Name: f450_vision
+Description: Description of f450_vision
+Version: 0.0.0
+Cflags: -I/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision/include
+Libs: -L${prefix}/lib 
+Requires: 

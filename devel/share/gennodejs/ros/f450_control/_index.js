@@ -1,0 +1,1 @@
+/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_control/share/gennodejs/ros/f450_control/_index.js

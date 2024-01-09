@@ -1,0 +1,8 @@
+prefix=/home/cjy/drone/mavros/catkin_ws/install
+
+Name: f450_control
+Description: Description of f450_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

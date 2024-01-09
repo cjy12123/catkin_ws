@@ -1,0 +1,1 @@
+/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision/share/roseus/ros/f450_vision/manifest.l

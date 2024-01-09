@@ -1,0 +1,4 @@
+Linked: (/home/cjy/drone/mavros/catkin_ws/devel/.private/offboard_py/lib/pkgconfig/offboard_py.pc, /home/cjy/drone/mavros/catkin_ws/devel/lib/pkgconfig/offboard_py.pc)
+Linked: (/home/cjy/drone/mavros/catkin_ws/devel/.private/offboard_py/lib/offboard_py/offb_node_pub, /home/cjy/drone/mavros/catkin_ws/devel/lib/offboard_py/offb_node_pub)
+Linked: (/home/cjy/drone/mavros/catkin_ws/devel/.private/offboard_py/share/offboard_py/cmake/offboard_pyConfig.cmake, /home/cjy/drone/mavros/catkin_ws/devel/share/offboard_py/cmake/offboard_pyConfig.cmake)
+Linked: (/home/cjy/drone/mavros/catkin_ws/devel/.private/offboard_py/share/offboard_py/cmake/offboard_pyConfig-version.cmake, /home/cjy/drone/mavros/catkin_ws/devel/share/offboard_py/cmake/offboard_pyConfig-version.cmake)

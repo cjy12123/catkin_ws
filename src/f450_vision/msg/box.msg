@@ -1,0 +1,4 @@
+float32 box_center_X
+float32 box_center_Y
+float32 box_center_W
+float32 box_center_H

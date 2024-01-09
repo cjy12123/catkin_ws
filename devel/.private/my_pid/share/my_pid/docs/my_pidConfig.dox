@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~Kp" : \b [double] Kp min: 0.0, default: 0.02, max: 10000.0
+- \b "~Kd" : \b [double] Kd min: 0.0, default: 0.0, max: 0.2
+- \b "~Ki" : \b [double] Ki min: 0.0, default: 0.0, max: 0.2
+- \b "~alpha" : \b [double] alpha min: 0.0, default: 0.85, max: 1.0
+- \b "~pid_output_max" : \b [double] pid_output_max min: -1.0, default: 0.1, max: 10000.0
+- \b "~pid_output_min" : \b [double] pid_output_min min: -1.0, default: 0.0, max: 1.0
+

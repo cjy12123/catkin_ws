@@ -1,0 +1,1 @@
+/home/cjy/drone/mavros/catkin_ws/devel/.private/catkin_tools_prebuild/setup.bash
