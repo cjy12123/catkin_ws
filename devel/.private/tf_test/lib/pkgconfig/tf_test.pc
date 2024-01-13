@@ -1,0 +1,8 @@
+prefix=/home/cjy/drone/mavros/catkin_ws/devel/.private/tf_test
+
+Name: tf_test
+Description: Description of tf_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

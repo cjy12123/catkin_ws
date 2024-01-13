@@ -28,9 +28,9 @@ int main(int argc, char **argv)
     ros::NodeHandle nh;
 
     ros::Subscriber f450_volocity_Z_sub = nh.subscribe<std_msgs::Float64>
-        ("f450_exec_control/volocitu_Z",1,f450_volocity_Z_callback);
+        ("f450_exec_control/volocity_Z",1,f450_volocity_Z_callback);
     ros::Subscriber f450_volocity_Y_sub = nh.subscribe<std_msgs::Float64>
-        ("f450_exec_control/volocitu_Y",1,f450_volocity_Y_callback);
+        ("f450_exec_control/volocity_Y",1,f450_volocity_Y_callback);
     ros::Subscriber f450_angular_Z_sub = nh.subscribe<std_msgs::Float64>
         ("f450_exec_control/angular_Z",1,f450_angular_Z_callback);
     ros::Publisher f450_volocity_angular_pub = nh.advertise<geometry_msgs::Twist>

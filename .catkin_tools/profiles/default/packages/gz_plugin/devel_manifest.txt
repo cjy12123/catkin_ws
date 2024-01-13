@@ -1,0 +1,5 @@
+gz_plugin
+/home/cjy/drone/mavros/catkin_ws/devel/.private/gz_plugin/cmake.lock /home/cjy/drone/mavros/catkin_ws/devel/./cmake.lock
+/home/cjy/drone/mavros/catkin_ws/devel/.private/gz_plugin/lib/pkgconfig/gz_plugin.pc /home/cjy/drone/mavros/catkin_ws/devel/lib/pkgconfig/gz_plugin.pc
+/home/cjy/drone/mavros/catkin_ws/devel/.private/gz_plugin/share/gz_plugin/cmake/gz_pluginConfig-version.cmake /home/cjy/drone/mavros/catkin_ws/devel/share/gz_plugin/cmake/gz_pluginConfig-version.cmake
+/home/cjy/drone/mavros/catkin_ws/devel/.private/gz_plugin/share/gz_plugin/cmake/gz_pluginConfig.cmake /home/cjy/drone/mavros/catkin_ws/devel/share/gz_plugin/cmake/gz_pluginConfig.cmake

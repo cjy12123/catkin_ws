@@ -1,0 +1,17 @@
+<launch>
+    <!-- 海龟仿真器 -->
+    <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
+
+    <!-- 键盘控制 -->
+    <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
+    
+    <!-- 创建一个乌龟节点 -->
+    <node pkg="tf_test" type="turtle_follow_node" args="A" name="turtle_follow" />
+
+    <!-- 创建两个乌龟的tf广播器 -->
+    <node pkg="tf_test" type="turtle_broadcaster_node" args="A" name="turtle1_broadcaster" />
+ 	<node pkg="tf_test" type="turtle_broadcaster_node" args="turtle1" name="turtle2_broadcaster" />
+ 
+    <!-- 第一个参数的乌龟跟随第二个参数的乌龟 -->
+    <node pkg="tf_test" type="turtle_listener_node" args="A turtle1" name="listener1" />
+ </launch>

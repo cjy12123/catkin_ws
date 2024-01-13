@@ -16,7 +16,7 @@ static bool reverse_acting = false; //有关于pid，reverse_acting为0（false�
 using namespace f450_controll;
 
 int plant_order = 1;//序号
-std_msgs::Float64 velocity_angular;//角速度
+std_msgs::Float64 velocity_angular;//速度、角速度
 
 f450_control::flag current_flag;//pid使能标志位
 void flag_sub_callback(const f450_control::flag::ConstPtr& msg)
@@ -71,12 +71,12 @@ int main(int argc, char **argv)
     {
         case 1:
             {f450_control_publisher = nh.advertise<std_msgs::Float64>
-                ("/f450_exec_control/volocitu_Z",1);//z方向速度
+                ("/f450_exec_control/volocity_Z",1);//z方向速度
                 ROS_INFO("set velocity_Z");
             break;}
         case 2:
             {f450_control_publisher = nh.advertise<std_msgs::Float64>
-                ("/f450_exec_control/volocitu_Y",1);//y方向速度
+                ("/f450_exec_control/volocity_Y",1);//y方向速度
                 ROS_INFO("set velocity_Y");
             break;}
         case 3:
@@ -110,12 +110,33 @@ int main(int argc, char **argv)
                     break;}
                 case 3:
                     {
+                    f450_state.data = 0.5;
                     break;}
             }
             velocity_angular.data = control_effort;
             f450_state_pub.publish(f450_state);
             f450_control_publisher.publish(velocity_angular);
         }
-        
+       else if(current_flag.flag==2){
+            switch (plant_order)
+            {
+                case 1:
+                    //state
+                    {
+                    f450_state.data = current_center.box_center_Y;//对应Z方向上的速度
+                    break;}
+                case 2:
+                    {
+                    f450_state.data = 0.7;//对应Y方向上的速度
+                    break;}
+                case 3:
+                    {
+                    f450_state.data = current_center.box_center_X;
+                    break;}
+            }
+            velocity_angular.data = control_effort;
+            f450_state_pub.publish(f450_state);
+            f450_control_publisher.publish(velocity_angular); 
+       } 
     }
 }

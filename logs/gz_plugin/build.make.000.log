@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/people_plugin.dir/src/people_plugin.cc.o[0m
+[01m[K/home/cjy/drone/mavros/catkin_ws/src/gz_plugin/src/people_plugin.cc:[m[K In member function ‘[01m[Kvirtual void gazebo::PeoplePlugin::Load(gazebo::physics::ModelPtr, sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/cjy/drone/mavros/catkin_ws/src/gz_plugin/src/people_plugin.cc:24:22:[m[K [01;31m[Kerror: [m[K‘[01m[KRobotPlugin[m[K’ has not been declared
+   24 |         boost::bind(&[01;31m[KRobotPlugin[m[K::OnUpdate, this));
+      |                      [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/people_plugin.dir/build.make:76: CMakeFiles/people_plugin.dir/src/people_plugin.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:183: CMakeFiles/people_plugin.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

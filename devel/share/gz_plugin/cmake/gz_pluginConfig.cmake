@@ -1,0 +1,1 @@
+/home/cjy/drone/mavros/catkin_ws/devel/.private/gz_plugin/share/gz_plugin/cmake/gz_pluginConfig.cmake
