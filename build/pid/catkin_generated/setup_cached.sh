@@ -8,6 +8,9 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/cjy/drone/mavros/catkin_ws/devel/.private/pid:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/cjy/drone/mavros/catkin_ws/build/pid'
+export PYTHONPATH="/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/cjy/drone/mavros/catkin_ws/src/pid:$ROS_PACKAGE_PATH"

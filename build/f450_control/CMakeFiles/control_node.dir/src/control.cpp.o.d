@@ -1107,4 +1107,11 @@ CMakeFiles/control_node.dir/src/control.cpp.o: \
  /opt/ros/noetic/include/mavros_msgs/State.h \
  /home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision/include/f450_vision/box.h \
  /home/cjy/drone/mavros/catkin_ws/devel/.private/f450_control/include/f450_control/flag.h \
- /opt/ros/noetic/include/std_msgs/Float64.h
+ /opt/ros/noetic/include/std_msgs/Float64.h \
+ /opt/ros/noetic/include/gazebo_msgs/GetModelState.h \
+ /opt/ros/noetic/include/gazebo_msgs/GetModelStateRequest.h \
+ /opt/ros/noetic/include/gazebo_msgs/GetModelStateResponse.h \
+ /opt/ros/noetic/include/geometry_msgs/Pose.h \
+ /opt/ros/noetic/include/geometry_msgs/Point.h \
+ /opt/ros/noetic/include/geometry_msgs/Quaternion.h \
+ /opt/ros/noetic/include/gazebo_msgs/ModelState.h

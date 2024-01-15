@@ -1228,7 +1228,9 @@ CMakeFiles/exec_control_node.dir/src/exec_control.cpp.o: /home/cjy/drone/mavros/
   /opt/ros/noetic/include/geometry_msgs/TwistStamped.h \
   /opt/ros/noetic/include/std_msgs/Header.h \
   /opt/ros/noetic/include/geometry_msgs/Twist.h \
-  /opt/ros/noetic/include/geometry_msgs/Vector3.h
+  /opt/ros/noetic/include/geometry_msgs/Vector3.h \
+  /opt/ros/noetic/include/mavros_msgs/PositionTarget.h \
+  /opt/ros/noetic/include/geometry_msgs/Point.h
 
 
 /opt/ros/noetic/include/geometry_msgs/Twist.h:
@@ -2335,6 +2337,8 @@ CMakeFiles/exec_control_node.dir/src/exec_control.cpp.o: /home/cjy/drone/mavros/
 
 /usr/include/boost/mpl/bool.hpp:
 
+/opt/ros/noetic/include/mavros_msgs/PositionTarget.h:
+
 /usr/include/boost/type_traits/add_pointer.hpp:
 
 /usr/include/boost/preprocessor/enum_params.hpp:
@@ -3302,6 +3306,8 @@ CMakeFiles/exec_control_node.dir/src/exec_control.cpp.o: /home/cjy/drone/mavros/
 /usr/include/boost/mpl/aux_/push_back_impl.hpp:
 
 /usr/include/boost/exception/exception.hpp:
+
+/opt/ros/noetic/include/geometry_msgs/Point.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 

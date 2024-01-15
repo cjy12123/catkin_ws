@@ -1234,8 +1234,19 @@ CMakeFiles/control_node.dir/src/control.cpp.o: /home/cjy/drone/mavros/catkin_ws/
   /opt/ros/noetic/include/mavros_msgs/State.h \
   /home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision/include/f450_vision/box.h \
   /home/cjy/drone/mavros/catkin_ws/devel/.private/f450_control/include/f450_control/flag.h \
-  /opt/ros/noetic/include/std_msgs/Float64.h
+  /opt/ros/noetic/include/std_msgs/Float64.h \
+  /opt/ros/noetic/include/gazebo_msgs/GetModelState.h \
+  /opt/ros/noetic/include/gazebo_msgs/GetModelStateRequest.h \
+  /opt/ros/noetic/include/gazebo_msgs/GetModelStateResponse.h \
+  /opt/ros/noetic/include/geometry_msgs/Pose.h \
+  /opt/ros/noetic/include/geometry_msgs/Point.h \
+  /opt/ros/noetic/include/geometry_msgs/Quaternion.h \
+  /opt/ros/noetic/include/gazebo_msgs/ModelState.h
 
+
+/opt/ros/noetic/include/gazebo_msgs/ModelState.h:
+
+/opt/ros/noetic/include/gazebo_msgs/GetModelStateResponse.h:
 
 /opt/ros/noetic/include/std_msgs/Float64.h:
 
@@ -1412,6 +1423,8 @@ CMakeFiles/control_node.dir/src/control.cpp.o: /home/cjy/drone/mavros/catkin_ws/
 /usr/include/boost/ratio/detail/mpl/sign.hpp:
 
 /usr/include/boost/ratio/detail/mpl/abs.hpp:
+
+/opt/ros/noetic/include/geometry_msgs/Quaternion.h:
 
 /usr/include/boost/ratio/ratio.hpp:
 
@@ -2587,6 +2600,8 @@ CMakeFiles/control_node.dir/src/control.cpp.o: /home/cjy/drone/mavros/catkin_ws/
 
 /usr/include/boost/preprocessor/comma_if.hpp:
 
+/opt/ros/noetic/include/gazebo_msgs/GetModelStateRequest.h:
+
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_wrap.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
@@ -2917,6 +2932,8 @@ CMakeFiles/control_node.dir/src/control.cpp.o: /home/cjy/drone/mavros/catkin_ws/
 
 /usr/include/boost/mpl/iterator_range.hpp:
 
+/opt/ros/noetic/include/gazebo_msgs/GetModelState.h:
+
 /usr/include/boost/mpl/find.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
@@ -3036,6 +3053,8 @@ CMakeFiles/control_node.dir/src/control.cpp.o: /home/cjy/drone/mavros/catkin_ws/
 /usr/include/boost/math/special_functions/math_fwd.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
+
+/opt/ros/noetic/include/geometry_msgs/Pose.h:
 
 /usr/include/boost/mpl/aux_/iter_fold_if_impl.hpp:
 
@@ -3262,6 +3281,8 @@ CMakeFiles/control_node.dir/src/control.cpp.o: /home/cjy/drone/mavros/catkin_ws/
 /usr/include/boost/mpl/aux_/push_back_impl.hpp:
 
 /usr/include/boost/exception/exception.hpp:
+
+/opt/ros/noetic/include/geometry_msgs/Point.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 

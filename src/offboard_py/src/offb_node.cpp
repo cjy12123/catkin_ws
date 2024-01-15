@@ -12,7 +12,6 @@
 #include <mavros_msgs/State.h>
 #include <geometry_msgs/Twist.h>
 #include <f450_control/flag.h>
-
 mavros_msgs::State current_state;
 void state_cb(const mavros_msgs::State::ConstPtr& msg){
     current_state = *msg;
@@ -54,7 +53,7 @@ int main(int argc, char **argv)
     }
 
     geometry_msgs::PoseStamped pose;
-    pose.pose.position.x = 1;
+    pose.pose.position.x = 0;
     pose.pose.position.y = 0;
     pose.pose.position.z = 1;
 

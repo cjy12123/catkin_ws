@@ -1,0 +1,20 @@
+[01m[K/home/cjy/drone/mavros/catkin_ws/src/pid/src/setpoint_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/cjy/drone/mavros/catkin_ws/src/pid/src/setpoint_node.cpp:52:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::param<float>(const char [9], std_msgs::Float64&, int)[m[K’
+   52 |   node_priv.param<float>("setpoint", setpoint, 1[01;31m[K)[m[K;//若bash文件内没有初始化则为默认值1
+      |                                                 [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/cjy/drone/mavros/catkin_ws/src/pid/src/setpoint_node.cpp:36[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:2120:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool ros::NodeHandle::param(const string&, T&, const T&) const [with T = float; std::string = std::__cxx11::basic_string<char>][m[K’
+ 2120 |   bool [01;36m[Kparam[m[K(const std::string& param_name, T& param_val, const T& default_val) const
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:2120:48:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd_msgs::Float64[m[K’ {aka ‘[01m[Kstd_msgs::Float64_<std::allocator<void> >[m[K’} to ‘[01m[Kfloat&[m[K’
+ 2120 |   bool param(const std::string& param_name, [01;36m[KT& param_val[m[K, const T& default_val) const
+      |                                             [01;36m[K~~~^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:2153:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KT ros::NodeHandle::param(const string&, const T&) const [with T = float; std::string = std::__cxx11::basic_string<char>][m[K’
+ 2153 |   T [01;36m[Kparam[m[K(const std::string& param_name, const T& default_val) const
+      |     [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:2153:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+make[2]: *** [CMakeFiles/setpoint_node.dir/build.make:76: CMakeFiles/setpoint_node.dir/src/setpoint_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:284: CMakeFiles/setpoint_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:146: all] Error 2

@@ -2,7 +2,7 @@
     <!--Z轴的速度-->
     <node name="controller" pkg="pid" type="controller" ns="axis_velocity_Z" output="screen" >
       <param name="node_name" value="velocity_Z_pid" />
-      <param name="Kp" value="4" />         <!--P值-->
+      <param name="Kp" value="2" />         <!--P值-->
       <param name="Ki" value="0.0" />       <!--I值-->
       <param name="Kd" value="0.0" />       <!--D值-->
       <param name="upper_limit" value="2" />       <!--最大输出-->
@@ -41,7 +41,7 @@
         <param name="Kd" value="0.0" />
         <param name="upper_limit" value="1" />
         <param name="lower_limit" value="-1" />
-        <param name="windup_limit" value="0.5" />
+        <param name="windup_limit" value="1" />
         <param name="max_loop_frequency" value="100.0" />
         <param name="min_loop_frequency" value="100.0" />
         <remap from="setpoint" to="/setpoint" />
@@ -51,7 +51,7 @@
         <param name="plant_order" value="3" />
       </node>
   <!-- X轴的速度--> 
-  <!-- <node name="controller" pkg="pid" type="controller" ns="axis_velocity_X" output="screen">
+  <node name="controller" pkg="pid" type="controller" ns="axis_velocity_X" output="screen">
           <param name="node_name" value="velocity_X_pid" />
           <param name="Kp" value="1" />
           <param name="Ki" value="0.1" />
@@ -64,9 +64,10 @@
           <remap from="setpoint" to="/setpoint" />
         </node>
 
-        <node name="f450_control_node" pkg="f450_control" type="control_node" ns="axis_angular_Y" output="screen" >
+        <node name="f450_control_node" pkg="f450_control" type="control_node" ns="axis_velocity_X" output="screen" >
           <param name="plant_order" value="4" />
-        </node> -->
+          <param name="reverse_acting" value="true" />
+        </node>
 
     <!-- 速度数据打包节点 -->
     <node name="f450_exec_control_node" pkg="f450_control" type="exec_control_node" output="screen" ></node>
@@ -74,8 +75,11 @@
     <node name="setpoint_node" pkg="pid" type="setpoint_node" output="screen" />
     <!--波形图绘制节点-->
     <node name="rqt_plot" pkg="rqt_plot" type="rqt_plot"
-    args="/axis_velocity_Z/control_effort/data /axis_velocity_Z/state/data" /><!--想要观测的话题数据-->
-
+    args="/axis_velocity_Z/control_effort/data /axis_velocity_Z/state/data 
+    /axis_velocity_Y/control_effort/data /axis_velocity_Y/state/data
+    /axis_angular_Z/control_effort/data /axis_angular_Z/state/data
+    /axis_velocity_X/control_effort/data /axis_velocity_X/state/data" 
+    /><!--想要观测的话题数据-->
     <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" /><!--pid K-I-D动态调节节点-->
 </launch>
    

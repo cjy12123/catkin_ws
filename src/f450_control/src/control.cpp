@@ -6,7 +6,8 @@
 #include <f450_vision/box.h>
 #include <f450_control/flag.h>
 #include <std_msgs/Float64.h>
-
+#include <gazebo_msgs/GetModelState.h>
+#include <gazebo_msgs/ModelState.h>
 namespace f450_controll
 {
 // Global so it can be passed from the callback fxn to main
@@ -44,6 +45,7 @@ void controlEffortCallback(const std_msgs::Float64& control_effort_input)
   }
 }
 
+double f450_position;
 
 int main(int argc, char **argv)
 {   
@@ -66,6 +68,13 @@ int main(int argc, char **argv)
     ros::Subscriber box_center_sub = nh.subscribe<f450_vision::box>
             ("/f450_vision/box",4,box_center_sub_callback);//YOLO识别方框坐标话题
     
+    // ros::Subscriber drone_position_sub = nh.subscribe<gazebo_msgs::ModelState>
+    //         ("/gazebo/model_states",10,drone_position_sub_callback);
+    ros::ServiceClient f450_position_srv = nh.serviceClient<gazebo_msgs::GetModelState>
+            ("/gazebo/get_model_state");
+    gazebo_msgs::GetModelState model_message;
+    model_message.request.model_name = "iris";
+
     ros::Publisher f450_control_publisher;
     switch (plant_order)//本文件会被f450_control.launch文件调用三次,每次会对不同方向的速度以及角速度进行pid控制
     {
@@ -84,6 +93,11 @@ int main(int argc, char **argv)
                 ("/f450_exec_control/angular_Z",1);//z方向角速度
                 ROS_INFO("set angular_Z");
             break;}
+        case 4:
+            {f450_control_publisher = nh.advertise<std_msgs::Float64>
+                ("/f450_exec_control/volocity_X",1);//X方向速度
+                ROS_INFO("set velocity_X");
+            break;}
     }
 
     ros::Rate rate(50);
@@ -96,47 +110,62 @@ int main(int argc, char **argv)
     while(ros::ok())
     {
         ros::spinOnce();
-        if(current_flag.flag==1){//是否使能pid控制
-            switch (plant_order)
-            {
-                case 1:
-                    //state
-                    {
-                    f450_state.data = current_center.box_center_Y;//对应Z方向上的速度
-                    break;}
-                case 2:
-                    {
-                    f450_state.data = current_center.box_center_X;//对应Y方向上的速度
-                    break;}
-                case 3:
-                    {
-                    f450_state.data = 0.5;
-                    break;}
-            }
-            velocity_angular.data = control_effort;
-            f450_state_pub.publish(f450_state);
-            f450_control_publisher.publish(velocity_angular);
+        f450_position_srv.call(model_message);
+        f450_position = sqrt(pow((4-model_message.response.pose.position.x),2)
+                        +pow((model_message.response.pose.position.y),2))/8;
+        if(current_flag.flag==0)
+        {
+            
         }
-       else if(current_flag.flag==2){
-            switch (plant_order)
-            {
-                case 1:
-                    //state
-                    {
-                    f450_state.data = current_center.box_center_Y;//对应Z方向上的速度
-                    break;}
-                case 2:
-                    {
-                    f450_state.data = 0.7;//对应Y方向上的速度
-                    break;}
-                case 3:
-                    {
-                    f450_state.data = current_center.box_center_X;
-                    break;}
+        else{
+            if(current_flag.flag==1){//是否使能pid控制
+                switch (plant_order)
+                {
+                    case 1:
+                        //state
+                        {
+                        f450_state.data = current_center.box_center_Y;//对应Z方向上的速度
+                        break;}
+                    case 2:
+                        {
+                        f450_state.data = current_center.box_center_X;//对应Y方向上的速度
+                        break;}
+                    case 3:
+                        {
+                        f450_state.data = 0.5;
+                        break;}
+                    case 4:
+                        {
+                        f450_state.data = f450_position;   
+                        break;}
+                }
             }
+        else if(current_flag.flag==2){
+                switch (plant_order)
+                {
+                    case 1:
+                        //state
+                        {
+                        f450_state.data = current_center.box_center_Y;//对应Z方向上的速度
+                        break;}
+                    case 2:
+                        {
+                        f450_state.data = 0.6;//对应Y方向上的速度
+                        break;}
+                    case 3:
+                        {
+                        f450_state.data = current_center.box_center_X;
+                        break;}
+                    case 4:
+                        {
+                        f450_state.data = f450_position;   
+                        break;}
+                }
+                
+        } 
             velocity_angular.data = control_effort;
             f450_state_pub.publish(f450_state);
             f450_control_publisher.publish(velocity_angular); 
-       } 
+    }
     }
 }
