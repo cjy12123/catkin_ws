@@ -112,41 +112,58 @@ int main(int argc, char **argv)
         ros::spinOnce();
         f450_position_srv.call(model_message);
         f450_position = sqrt(pow((4-model_message.response.pose.position.x),2)
-                        +pow((model_message.response.pose.position.y),2))/8;
-        if(current_flag.flag==0)
-        {
-            
-        }
-        else{
-            if(current_flag.flag==1){//是否使能pid控制
-                switch (plant_order)
-                {
-                    case 1:
-                        //state
-                        {
-                        f450_state.data = current_center.box_center_Y;//对应Z方向上的速度
-                        break;}
-                    case 2:
-                        {
-                        f450_state.data = current_center.box_center_X;//对应Y方向上的速度
-                        break;}
-                    case 3:
-                        {
-                        f450_state.data = 0.5;
-                        break;}
-                    case 4:
-                        {
-                        f450_state.data = f450_position;   
-                        break;}
-                }
+                        +pow((model_message.response.pose.position.y),2));
+        if(current_flag.flag==0){
+            switch (plant_order)
+            {
+                case 1:
+                    //state
+                    {
+                    f450_state.data = model_message.response.pose.position.z-1;//对应Z方向上的速度
+                    break;}
+                case 2:
+                    {
+                    f450_state.data = 0;//对应Y方向上的速度
+                    break;}
+                case 3:
+                    {
+                    f450_state.data = 0;
+                    break;}
+                case 4:
+                    {
+                    f450_state.data = 0;   
+                    break;}
             }
+        }
+        else if(current_flag.flag==1){//是否使能pid控制
+            switch (plant_order)
+            {
+                case 1:
+                    //state
+                    {
+                    f450_state.data = model_message.response.pose.position.z-1;//对应Z方向上的速度
+                    break;}
+                case 2:
+                    {
+                    f450_state.data = current_center.box_center_X-0.5;//对应Y方向上的速度
+                    break;}
+                case 3:
+                    {
+                    f450_state.data = 0;
+                    break;}
+                case 4:
+                    {
+                    f450_state.data = 4-f450_position;   
+                    break;}
+            }
+        }
         else if(current_flag.flag==2){
                 switch (plant_order)
                 {
                     case 1:
                         //state
                         {
-                        f450_state.data = current_center.box_center_Y;//对应Z方向上的速度
+                        f450_state.data = model_message.response.pose.position.z-1;//对应Z方向上的速度
                         break;}
                     case 2:
                         {
@@ -154,11 +171,11 @@ int main(int argc, char **argv)
                         break;}
                     case 3:
                         {
-                        f450_state.data = current_center.box_center_X;
+                        f450_state.data = current_center.box_center_X-0.5;
                         break;}
                     case 4:
                         {
-                        f450_state.data = f450_position;   
+                        f450_state.data = 4-f450_position;   
                         break;}
                 }
                 
@@ -166,6 +183,5 @@ int main(int argc, char **argv)
             velocity_angular.data = control_effort;
             f450_state_pub.publish(f450_state);
             f450_control_publisher.publish(velocity_angular); 
-    }
     }
 }

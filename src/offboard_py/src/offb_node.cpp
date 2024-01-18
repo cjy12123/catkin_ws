@@ -73,7 +73,7 @@ int main(int argc, char **argv)
     ros::Time last_request = ros::Time::now();
 
     f450_control::flag flag;
-    flag.flag=1;
+    flag.flag=0;
 
     while(ros::ok()){
         if( current_state.mode != "OFFBOARD" &&

@@ -19,7 +19,7 @@
     <!--Y轴的速度-->
     <node name="controller" pkg="pid" type="controller" ns="axis_velocity_Y" output="screen" >
       <param name="node_name" value="velocity_Y_pid" />
-      <param name="Kp" value="1" />
+      <param name="Kp" value="3" />
       <param name="Ki" value="0.1" />
       <param name="Kd" value="0.0" />
       <param name="upper_limit" value="1" />
@@ -36,7 +36,7 @@
   <!-- Z轴的角速度 -->
   <node name="controller" pkg="pid" type="controller" ns="axis_angular_Z" output="screen" >
         <param name="node_name" value="angular_Z_pid" />
-        <param name="Kp" value="1" />
+        <param name="Kp" value="4" />
         <param name="Ki" value="0.1" />
         <param name="Kd" value="0.0" />
         <param name="upper_limit" value="1" />
@@ -53,7 +53,7 @@
   <!-- X轴的速度--> 
   <node name="controller" pkg="pid" type="controller" ns="axis_velocity_X" output="screen">
           <param name="node_name" value="velocity_X_pid" />
-          <param name="Kp" value="1" />
+          <param name="Kp" value="3" />
           <param name="Ki" value="0.1" />
           <param name="Kd" value="0.0" />
           <param name="upper_limit" value="1" />
@@ -66,7 +66,6 @@
 
         <node name="f450_control_node" pkg="f450_control" type="control_node" ns="axis_velocity_X" output="screen" >
           <param name="plant_order" value="4" />
-          <param name="reverse_acting" value="true" />
         </node>
 
     <!-- 速度数据打包节点 -->
