@@ -1,5 +1,0 @@
-f450_position
-/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_position/cmake.lock /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/./cmake.lock
-/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_position/share/f450_position/cmake/f450_positionConfig-version.cmake /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/share/f450_position/cmake/f450_positionConfig-version.cmake
-/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_position/share/f450_position/cmake/f450_positionConfig.cmake /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/share/f450_position/cmake/f450_positionConfig.cmake
-/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_position/lib/pkgconfig/f450_position.pc /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/lib/pkgconfig/f450_position.pc
