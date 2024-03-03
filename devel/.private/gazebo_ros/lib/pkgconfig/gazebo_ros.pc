@@ -1,8 +1,0 @@
-prefix=/home/cjy/drone/mavros/catkin_ws/devel/.private/gazebo_ros
-
-Name: gazebo_ros
-Description: Description of gazebo_ros
-Version: 0.0.0
-Cflags: -I/home/cjy/drone/mavros/catkin_ws/src/gazebo_ros/include
-Libs: -L${prefix}/lib -lgazebo_ros_harness
-Requires: 

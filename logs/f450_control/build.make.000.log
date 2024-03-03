@@ -1,0 +1,39 @@
+[35m[1mScanning dependencies of target exec_control_node[0m
+[35m[1mScanning dependencies of target _f450_control_generate_messages_check_deps_flag[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[  0%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  9%] [32mBuilding CXX object CMakeFiles/exec_control_node.dir/src/exec_control.cpp.o[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  9%] Built target std_msgs_generate_messages_cpp
+[  9%] Built target std_msgs_generate_messages_lisp
+[  9%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target control_node[0m
+[  9%] Built target std_msgs_generate_messages_nodejs
+[  9%] Built target _f450_control_generate_messages_check_deps_flag
+[ 18%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control.cpp.o[0m
+[35m[1mScanning dependencies of target f450_control_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target f450_control_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target f450_control_generate_messages_py[0m
+[ 27%] [34m[1mGenerating C++ code from f450_control/flag.msg[0m
+[35m[1mScanning dependencies of target f450_control_generate_messages_eus[0m
+[ 36%] [34m[1mGenerating Lisp code from f450_control/flag.msg[0m
+[ 45%] [34m[1mGenerating Python from MSG f450_control/flag[0m
+[ 54%] [34m[1mGenerating EusLisp code from f450_control/flag.msg[0m
+[ 54%] Built target f450_control_generate_messages_lisp
+[35m[1mScanning dependencies of target f450_control_generate_messages_nodejs[0m
+[ 63%] [34m[1mGenerating Javascript code from f450_control/flag.msg[0m
+[ 63%] Built target f450_control_generate_messages_cpp
+[ 72%] [34m[1mGenerating EusLisp manifest code for f450_control[0m
+[ 72%] Built target f450_control_generate_messages_nodejs
+[ 81%] [34m[1mGenerating Python msg __init__.py for f450_control[0m
+[ 81%] Built target f450_control_generate_messages_py
+[ 81%] Built target f450_control_generate_messages_eus
+[35m[1mScanning dependencies of target f450_control_generate_messages[0m
+[ 81%] Built target f450_control_generate_messages
+[ 90%] [32m[1mLinking CXX executable /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_control/lib/f450_control/exec_control_node[0m
+[100%] [32m[1mLinking CXX executable /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_control/lib/f450_control/control_node[0m
+[100%] Built target exec_control_node
+[100%] Built target control_node

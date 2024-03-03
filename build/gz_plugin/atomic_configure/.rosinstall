@@ -1,2 +1,0 @@
-- setup-file:
-    local-name: /home/cjy/drone/mavros/catkin_ws/devel/.private/gz_plugin/setup.sh

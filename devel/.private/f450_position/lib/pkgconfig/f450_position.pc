@@ -1,4 +1,4 @@
-prefix=/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_position
+prefix=/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_position
 
 Name: f450_position
 Description: Description of f450_position

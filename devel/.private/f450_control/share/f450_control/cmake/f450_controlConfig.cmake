@@ -67,14 +67,14 @@ set(f450_control_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(f450_control_SOURCE_PREFIX /home/cjy/drone/mavros/catkin_ws/src/f450_control)
-  set(f450_control_DEVEL_PREFIX /home/cjy/drone/mavros/catkin_ws/devel/.private/f450_control)
+  set(f450_control_SOURCE_PREFIX /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/f450_control)
+  set(f450_control_DEVEL_PREFIX /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_control)
   set(f450_control_INSTALL_PREFIX "")
   set(f450_control_PREFIX ${f450_control_DEVEL_PREFIX})
 else()
   set(f450_control_SOURCE_PREFIX "")
   set(f450_control_DEVEL_PREFIX "")
-  set(f450_control_INSTALL_PREFIX /home/cjy/drone/mavros/catkin_ws/install)
+  set(f450_control_INSTALL_PREFIX /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install)
   set(f450_control_PREFIX ${f450_control_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(f450_control_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_control/include " STREQUAL " ")
+if(NOT "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_control/include " STREQUAL " ")
   set(f450_control_INCLUDE_DIRS "")
-  set(_include_dirs "/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_control/include")
+  set(_include_dirs "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_control/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_control/include " S
         message(FATAL_ERROR "Project 'f450_control' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'f450_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/cjy/drone/mavros/catkin_ws/src/f450_control/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'f450_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/f450_control/${idir}'.  ${_report}")
     endif()
     _list_append_unique(f450_control_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cjy/drone/mavros/catkin_ws/devel/.private/f450_control/lib;/home/cjy/drone/mavros/catkin_ws/devel/lib;/home/cjy/yolo/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_control/lib;/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

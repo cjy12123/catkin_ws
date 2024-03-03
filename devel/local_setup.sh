@@ -1,1 +1,1 @@
-/home/cjy/drone/mavros/catkin_ws/devel/.private/catkin_tools_prebuild/local_setup.sh
+/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/catkin_tools_prebuild/local_setup.sh

@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/cjy/drone/mavros/catkin_ws/devel/.private/offboard_py/setup.sh
+    local-name: /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/offboard_py/setup.sh

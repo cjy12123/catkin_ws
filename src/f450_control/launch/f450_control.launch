@@ -73,13 +73,14 @@
     <!--pid计算节点-->
     <node name="setpoint_node" pkg="pid" type="setpoint_node" output="screen" />
     <!--波形图绘制节点-->
-    <node name="rqt_plot" pkg="rqt_plot" type="rqt_plot"
+    <!-- <node name="rqt_plot" pkg="rqt_plot" type="rqt_plot"
     args="/axis_velocity_Z/control_effort/data /axis_velocity_Z/state/data 
     /axis_velocity_Y/control_effort/data /axis_velocity_Y/state/data
     /axis_angular_Z/control_effort/data /axis_angular_Z/state/data
     /axis_velocity_X/control_effort/data /axis_velocity_X/state/data" 
-    /><!--想要观测的话题数据-->
-    <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" /><!--pid K-I-D动态调节节点-->
+    /> -->
+    <!--想要观测的话题数据-->
+    <!-- <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" /> -->
 </launch>
    
    

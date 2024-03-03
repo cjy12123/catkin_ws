@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import sys,os
-sys.path.append("/home/cjy/drone/mavros/catkin_ws/src/f450_vision")
+sys.path.append("/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/f450_vision")
 
 import rospy
 import cv2

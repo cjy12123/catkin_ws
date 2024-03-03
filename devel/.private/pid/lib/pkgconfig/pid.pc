@@ -1,8 +1,8 @@
-prefix=/home/cjy/drone/mavros/catkin_ws/devel/.private/pid
+prefix=/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid
 
 Name: pid
 Description: Description of pid
 Version: 0.0.28
-Cflags: -I/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/include -I/home/cjy/drone/mavros/catkin_ws/src/pid/include
+Cflags: -I/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/include -I/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/pid/include
 Libs: -L${prefix}/lib 
 Requires: roscpp std_msgs message_runtime dynamic_reconfigure

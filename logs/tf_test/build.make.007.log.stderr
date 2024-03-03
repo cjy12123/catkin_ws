@@ -1,4 +1,0 @@
-[01m[K/home/cjy/drone/mavros/catkin_ws/src/tf_test/src/turtle_broadcaster.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/cjy/drone/mavros/catkin_ws/src/tf_test/src/turtle_broadcaster.cpp:31:31:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K-Wformat-security[m[K]
-   31 |     printf(turtle_name.c_str()[01;35m[K)[m[K;
-      |                               [01;35m[K^[m[K

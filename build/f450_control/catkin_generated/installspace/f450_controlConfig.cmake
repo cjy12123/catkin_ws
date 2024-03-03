@@ -67,14 +67,14 @@ set(f450_control_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(f450_control_SOURCE_PREFIX /home/cjy/drone/mavros/catkin_ws/src/f450_control)
-  set(f450_control_DEVEL_PREFIX /home/cjy/drone/mavros/catkin_ws/devel/.private/f450_control)
+  set(f450_control_SOURCE_PREFIX /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/f450_control)
+  set(f450_control_DEVEL_PREFIX /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_control)
   set(f450_control_INSTALL_PREFIX "")
   set(f450_control_PREFIX ${f450_control_DEVEL_PREFIX})
 else()
   set(f450_control_SOURCE_PREFIX "")
   set(f450_control_DEVEL_PREFIX "")
-  set(f450_control_INSTALL_PREFIX /home/cjy/drone/mavros/catkin_ws/install)
+  set(f450_control_INSTALL_PREFIX /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install)
   set(f450_control_PREFIX ${f450_control_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cjy/drone/mavros/catkin_ws/install/lib;/home/cjy/drone/mavros/catkin_ws/devel/lib;/home/cjy/yolo/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install/lib;/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

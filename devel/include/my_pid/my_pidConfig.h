@@ -1,1 +1,0 @@
-/home/cjy/drone/mavros/catkin_ws/devel/.private/my_pid/include/my_pid/my_pidConfig.h

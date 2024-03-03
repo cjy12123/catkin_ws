@@ -11,7 +11,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision}
+: ${_CATKIN_SETUP_DIR:=/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_vision}
 _SETUP_UTIL="$_CATKIN_SETUP_DIR/_setup_util.py"
 unset _CATKIN_SETUP_DIR
 

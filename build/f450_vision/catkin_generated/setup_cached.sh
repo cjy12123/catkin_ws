@@ -7,10 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/cjy/drone/mavros/catkin_ws/build/f450_vision'
-export PYTHONPATH="/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/cjy/drone/mavros/catkin_ws/src/f450_vision:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_vision:$CMAKE_PREFIX_PATH"
+export PWD='/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/f450_vision'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_vision/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/f450_vision:$ROS_PACKAGE_PATH"

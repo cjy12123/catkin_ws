@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/include/pid/PidConfig.h"
-  "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib/python3/dist-packages/pid/cfg/PidConfig.py"
-  "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/share/pid/docs/PidConfig-usage.dox"
-  "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/share/pid/docs/PidConfig.dox"
-  "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/share/pid/docs/PidConfig.wikidoc"
+  "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/include/pid/PidConfig.h"
+  "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/lib/python3/dist-packages/pid/cfg/PidConfig.py"
+  "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/share/pid/docs/PidConfig-usage.dox"
+  "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/share/pid/docs/PidConfig.dox"
+  "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/share/pid/docs/PidConfig.wikidoc"
   "CMakeFiles/pid_gencfg"
 )
 

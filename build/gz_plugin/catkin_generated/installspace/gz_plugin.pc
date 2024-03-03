@@ -1,8 +1,0 @@
-prefix=/home/cjy/drone/mavros/catkin_ws/install
-
-Name: gz_plugin
-Description: Description of gz_plugin
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

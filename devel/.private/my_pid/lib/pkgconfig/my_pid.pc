@@ -1,8 +1,0 @@
-prefix=/home/cjy/drone/mavros/catkin_ws/devel/.private/my_pid
-
-Name: my_pid
-Description: Description of my_pid
-Version: 0.0.0
-Cflags: -I/home/cjy/drone/mavros/catkin_ws/devel/.private/my_pid/include
-Libs: -L${prefix}/lib 
-Requires: 

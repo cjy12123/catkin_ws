@@ -1,1 +1,1 @@
-/home/cjy/drone/mavros/catkin_ws/devel/.private/f450_vision/share/common-lisp/ros/f450_vision/msg/f450_vision-msg.asd
+/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_vision/share/common-lisp/ros/f450_vision/msg/f450_vision-msg.asd

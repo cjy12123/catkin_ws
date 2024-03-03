@@ -1,1 +1,0 @@
-/home/cjy/drone/mavros/catkin_ws/devel/.private/gz_plugin/lib/pkgconfig/gz_plugin.pc

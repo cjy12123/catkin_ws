@@ -1,8 +1,8 @@
-# Install script for directory: /home/cjy/drone/mavros/catkin_ws/src/pid
+# Install script for directory: /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/pid
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cjy/drone/mavros/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,11 +37,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -54,114 +49,114 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjy/drone/mavros/catkin_ws/install/_setup_util.py")
+   "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjy/drone/mavros/catkin_ws/install" TYPE PROGRAM FILES "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install" TYPE PROGRAM FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjy/drone/mavros/catkin_ws/install/env.sh")
+   "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjy/drone/mavros/catkin_ws/install" TYPE PROGRAM FILES "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install" TYPE PROGRAM FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjy/drone/mavros/catkin_ws/install/setup.bash;/home/cjy/drone/mavros/catkin_ws/install/local_setup.bash")
+   "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install/setup.bash;/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjy/drone/mavros/catkin_ws/install" TYPE FILE FILES
-    "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/setup.bash"
-    "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install" TYPE FILE FILES
+    "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/setup.bash"
+    "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjy/drone/mavros/catkin_ws/install/setup.sh;/home/cjy/drone/mavros/catkin_ws/install/local_setup.sh")
+   "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install/setup.sh;/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjy/drone/mavros/catkin_ws/install" TYPE FILE FILES
-    "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/setup.sh"
-    "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install" TYPE FILE FILES
+    "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/setup.sh"
+    "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjy/drone/mavros/catkin_ws/install/setup.zsh;/home/cjy/drone/mavros/catkin_ws/install/local_setup.zsh")
+   "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install/setup.zsh;/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjy/drone/mavros/catkin_ws/install" TYPE FILE FILES
-    "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/setup.zsh"
-    "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install" TYPE FILE FILES
+    "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/setup.zsh"
+    "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cjy/drone/mavros/catkin_ws/install/.rosinstall")
+   "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cjy/drone/mavros/catkin_ws/install" TYPE FILE FILES "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install" TYPE FILE FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pid" TYPE FILE FILES "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/include/pid/PidConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pid" TYPE FILE FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/include/pid/PidConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/pid" TYPE FILE FILES "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib/python3/dist-packages/pid/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/pid" TYPE FILE FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/lib/python3/dist-packages/pid/__init__.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib/python3/dist-packages/pid/cfg")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/lib/python3/dist-packages/pid/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/pid" TYPE DIRECTORY FILES "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib/python3/dist-packages/pid/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/pid" TYPE DIRECTORY FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/lib/python3/dist-packages/pid/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/pid.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/pid.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pid/cmake" TYPE FILE FILES
-    "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/pidConfig.cmake"
-    "/home/cjy/drone/mavros/catkin_ws/build/pid/catkin_generated/installspace/pidConfig-version.cmake"
+    "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/pidConfig.cmake"
+    "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/catkin_generated/installspace/pidConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pid" TYPE FILE FILES "/home/cjy/drone/mavros/catkin_ws/src/pid/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pid" TYPE FILE FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/pid/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -171,7 +166,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/controller"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pid" TYPE EXECUTABLE FILES "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib/pid/controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pid" TYPE EXECUTABLE FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/lib/pid/controller")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/controller" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/controller")
     file(RPATH_CHANGE
@@ -191,7 +186,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/plant_sim"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pid" TYPE EXECUTABLE FILES "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib/pid/plant_sim")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pid" TYPE EXECUTABLE FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/lib/pid/plant_sim")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/plant_sim" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/plant_sim")
     file(RPATH_CHANGE
@@ -211,7 +206,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/setpoint_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pid" TYPE EXECUTABLE FILES "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib/pid/setpoint_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pid" TYPE EXECUTABLE FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/lib/pid/setpoint_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/setpoint_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/setpoint_node")
     file(RPATH_CHANGE
@@ -231,7 +226,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/sim_time"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pid" TYPE EXECUTABLE FILES "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib/pid/sim_time")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pid" TYPE EXECUTABLE FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/lib/pid/sim_time")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/sim_time" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/sim_time")
     file(RPATH_CHANGE
@@ -251,7 +246,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/autotune"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pid" TYPE EXECUTABLE FILES "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib/pid/autotune")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pid" TYPE EXECUTABLE FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/lib/pid/autotune")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/autotune" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pid/autotune")
     file(RPATH_CHANGE
@@ -265,16 +260,16 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pid" TYPE DIRECTORY FILES "/home/cjy/drone/mavros/catkin_ws/src/pid/include/pid/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pid" TYPE DIRECTORY FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/pid/include/pid/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pid/launch" TYPE DIRECTORY FILES "/home/cjy/drone/mavros/catkin_ws/src/pid/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pid/launch" TYPE DIRECTORY FILES "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/pid/launch/")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cjy/drone/mavros/catkin_ws/build/pid/gtest/cmake_install.cmake")
+  include("/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/gtest/cmake_install.cmake")
 
 endif()
 
@@ -286,5 +281,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cjy/drone/mavros/catkin_ws/build/pid/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/build/pid/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

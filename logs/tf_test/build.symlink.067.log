@@ -1,6 +1,0 @@
-Linked: (/home/cjy/drone/mavros/catkin_ws/devel/.private/tf_test/lib/pkgconfig/tf_test.pc, /home/cjy/drone/mavros/catkin_ws/devel/lib/pkgconfig/tf_test.pc)
-Linked: (/home/cjy/drone/mavros/catkin_ws/devel/.private/tf_test/lib/tf_test/turtle_listener_node, /home/cjy/drone/mavros/catkin_ws/devel/lib/tf_test/turtle_listener_node)
-Linked: (/home/cjy/drone/mavros/catkin_ws/devel/.private/tf_test/lib/tf_test/turtle_broadcaster_node, /home/cjy/drone/mavros/catkin_ws/devel/lib/tf_test/turtle_broadcaster_node)
-Linked: (/home/cjy/drone/mavros/catkin_ws/devel/.private/tf_test/lib/tf_test/turtle_follow_node, /home/cjy/drone/mavros/catkin_ws/devel/lib/tf_test/turtle_follow_node)
-Linked: (/home/cjy/drone/mavros/catkin_ws/devel/.private/tf_test/share/tf_test/cmake/tf_testConfig.cmake, /home/cjy/drone/mavros/catkin_ws/devel/share/tf_test/cmake/tf_testConfig.cmake)
-Linked: (/home/cjy/drone/mavros/catkin_ws/devel/.private/tf_test/share/tf_test/cmake/tf_testConfig-version.cmake, /home/cjy/drone/mavros/catkin_ws/devel/share/tf_test/cmake/tf_testConfig-version.cmake)

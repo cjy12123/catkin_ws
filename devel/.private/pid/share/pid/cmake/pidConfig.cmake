@@ -67,14 +67,14 @@ set(pid_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(pid_SOURCE_PREFIX /home/cjy/drone/mavros/catkin_ws/src/pid)
-  set(pid_DEVEL_PREFIX /home/cjy/drone/mavros/catkin_ws/devel/.private/pid)
+  set(pid_SOURCE_PREFIX /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/pid)
+  set(pid_DEVEL_PREFIX /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid)
   set(pid_INSTALL_PREFIX "")
   set(pid_PREFIX ${pid_DEVEL_PREFIX})
 else()
   set(pid_SOURCE_PREFIX "")
   set(pid_DEVEL_PREFIX "")
-  set(pid_INSTALL_PREFIX /home/cjy/drone/mavros/catkin_ws/install)
+  set(pid_INSTALL_PREFIX /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install)
   set(pid_PREFIX ${pid_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(pid_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/include;/home/cjy/drone/mavros/catkin_ws/src/pid/include " STREQUAL " ")
+if(NOT "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/include;/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/pid/include " STREQUAL " ")
   set(pid_INCLUDE_DIRS "")
-  set(_include_dirs "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/include;/home/cjy/drone/mavros/catkin_ws/src/pid/include")
+  set(_include_dirs "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/include;/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/pid/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wiki.ros.org/pid " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/cjy/drone/mavros/catkin_ws/devel/.private/pid/include;/home/cjy/dr
         message(FATAL_ERROR "Project 'pid' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'pid' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/cjy/drone/mavros/catkin_ws/src/pid/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'pid' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/pid/${idir}'.  ${_report}")
     endif()
     _list_append_unique(pid_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cjy/drone/mavros/catkin_ws/devel/.private/pid/lib;/home/cjy/drone/mavros/catkin_ws/devel/lib;/home/cjy/yolo/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/pid/lib;/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

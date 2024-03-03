@@ -1,11 +1,11 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/cjy/drone/mavros/catkin_ws/src/f450_vision/msg/box.msg"
+messages_str = "/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/f450_vision/msg/box.msg"
 services_str = ""
 pkg_name = "f450_vision"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"
-dep_include_paths_str = "f450_vision;/home/cjy/drone/mavros/catkin_ws/src/f450_vision/msg;std_msgs;/opt/ros/noetic/share/std_msgs/cmake/../msg"
+dep_include_paths_str = "f450_vision;/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/src/f450_vision/msg;std_msgs;/opt/ros/noetic/share/std_msgs/cmake/../msg"
 PYTHON_EXECUTABLE = "/usr/bin/python3"
 package_has_static_sources = '' == 'TRUE'
 genmsg_check_deps_script = "/opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

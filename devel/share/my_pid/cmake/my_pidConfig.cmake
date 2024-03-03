@@ -1,1 +1,0 @@
-/home/cjy/drone/mavros/catkin_ws/devel/.private/my_pid/share/my_pid/cmake/my_pidConfig.cmake

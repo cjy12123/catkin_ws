@@ -1,4 +1,4 @@
-prefix=/home/cjy/drone/mavros/catkin_ws/devel/.private/catkin_tools_prebuild
+prefix=/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/catkin_tools_prebuild
 
 Name: catkin_tools_prebuild
 Description: Description of catkin_tools_prebuild
