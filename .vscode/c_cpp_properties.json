@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/cjy/drone/mavros/catkin_ws/devel/include/**",
+                "/opt/ros/noetic/include/**",
+                "/home/cjy/drone/mavros/catkin_ws/src/mavros/libmavconn/include/**",
+                "/home/cjy/drone/mavros/catkin_ws/src/mavros/mavros/include/**",
+                "/home/cjy/drone/mavros/catkin_ws/src/mavros/mavros_msgs/include/**",
+                "/home/cjy/drone/mavros/catkin_ws/src/mavros/test_mavros/include/**",
+                "/home/cjy/yolo/catkin_ws/src/vision/include/**",
+                "/usr/include/**",
+                "/home/cjy/drone/mavros/catkin_ws/src/sitl_vision",
+                "/home/cjy/drone/mavros/catkin_ws/src/f450_control"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

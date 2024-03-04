@@ -1,8 +1,0 @@
-prefix=/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install
-
-Name: f450_control
-Description: Description of f450_control
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: 

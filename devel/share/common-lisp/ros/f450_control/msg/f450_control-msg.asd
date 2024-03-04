@@ -1,1 +1,0 @@
-/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_control/share/common-lisp/ros/f450_control/msg/f450_control-msg.asd

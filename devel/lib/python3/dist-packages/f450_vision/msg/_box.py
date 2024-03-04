@@ -1,1 +1,0 @@
-/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_vision/lib/python3/dist-packages/f450_vision/msg/_box.py
