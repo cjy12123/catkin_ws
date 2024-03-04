@@ -1,0 +1,8 @@
+prefix=/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_control
+
+Name: f450_control
+Description: Description of f450_control
+Version: 0.0.0
+Cflags: -I/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/f450_control/include
+Libs: -L${prefix}/lib 
+Requires: 

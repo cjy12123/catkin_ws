@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target offb_node_pub[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/offb_node_pub.dir/src/offb_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/offboard_py/lib/offboard_py/offb_node_pub[0m
+[100%] Built target offb_node_pub

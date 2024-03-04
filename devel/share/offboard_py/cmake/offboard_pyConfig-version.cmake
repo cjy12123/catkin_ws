@@ -1,0 +1,1 @@
+/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/devel/.private/offboard_py/share/offboard_py/cmake/offboard_pyConfig-version.cmake

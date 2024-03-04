@@ -1,0 +1,8 @@
+prefix=/home/cjy/Desktop/my_log/px4_test/px4_dir/catkin_ws/install
+
+Name: f450_position
+Description: Description of f450_position
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
